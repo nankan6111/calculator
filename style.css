@@ -1,0 +1,90 @@
+body {
+    background-color: #91a4c2; 
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+}
+
+.calculator {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 10px;
+    background-color: rgb(33, 43, 65);
+}
+
+.output {
+    position: relative;
+    height: 200px;
+    flex: 30%;
+}
+
+.displayBar {
+    position: absolute;
+    width: 95%;
+    bottom: 5%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+
+    color: whitesmoke;
+    font-size: 72px;
+    font-family: monospace;
+}
+
+.input {
+    flex: 70%;
+    background-color: #333333;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-areas:
+        "other other other function"
+        "number number number function"
+        "number number number function"
+        "number number number function"
+        "number number number function"; */
+}
+
+
+.otherButton{
+    /* grid-area: other; */
+    background-color: darkgrey;
+}
+
+.functionButton{
+    /* grid-area: function; */
+    background-color: peru;
+    color: rgb(255, 255, 255);
+}
+
+.numberKeypad {
+    /* grid-area: number; */
+    background-color: rgb(107, 107, 107);
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
