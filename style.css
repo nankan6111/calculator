@@ -26,9 +26,27 @@ body {
     flex: 30%;
 }
 
-.displayBar {
+.historyRecord {
     position: absolute;
     width: 95%;
+    height: 80px;
+    bottom: 50%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+
+    color: whitesmoke;
+    font-size: 36px;
+    font-family: sans-serif;
+
+}
+
+.displayValue {
+    position: absolute;
+    width: 95%;
+    height: 80px;
     bottom: 5%;
     text-align: right;
     margin-left: auto;
@@ -38,7 +56,7 @@ body {
 
     color: whitesmoke;
     font-size: 72px;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 .input {
@@ -81,10 +99,24 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    box-shadow: 0 0 2px 1px #0000004f;
+    height: 65px;
+    width: 65px;
+
 
     font-size: 30px;
     font-family: sans-serif;
     font-weight: bold;
+
+    transition: 0.5s;
+}
+
+.button:focus{
+    outline: none;
+    filter: brightness(120%);
+}
+
+.functionButton:focus{
+    background-color:  rgb(228, 226, 226);
+    color: peru;
 }
